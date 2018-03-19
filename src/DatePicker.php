@@ -2,7 +2,7 @@
 
 namespace readly24\airdatepicker;
 
-use mrserg161\airdatepicker\DatePickerAsset;
+use readly24\airdatepicker\DatePickerAsset;
 use yii\bootstrap\Html;
 use yii\helpers\Json;
 use yii\widgets\InputWidget;
