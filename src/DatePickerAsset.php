@@ -22,4 +22,8 @@ class DatePickerAsset extends AssetBundle
         JqueryAsset::class,
         BootstrapAsset::class,
     ];
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> e3a73b09ec411cc041dfb462cef6f9f964e95faf
