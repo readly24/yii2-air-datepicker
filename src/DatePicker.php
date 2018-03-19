@@ -47,7 +47,15 @@ class DatePicker extends InputWidget
         $options = empty($this->clientOptions) ? '' : Json::encode($this->clientOptions);
         $js = "jQuery('#$id').datepicker($options)";
         preg_match_all("/\[(\d+)\]([a-z_-]+)/i", $this->attribute, $value);
-        $_attr = $value[2][0] ? $value[2][0] :  $this->attribute;
+
+        if(isset($value[2][0])) {
+            $_attr = $value[2][0];
+        }
+        else{
+
+            $_attr = $this->attribute;
+        }
+
         if ($value = $this->model->$_attr) {
             $this->clientEvents = array_merge($this->clientEvents, ['selectDate' => 'new Date(' . strtotime($value) * 1000 . ')']);
         }
