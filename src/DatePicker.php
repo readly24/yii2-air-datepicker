@@ -1,6 +1,6 @@
 <?php
 
-namespace mrserg161\airdatepicker;
+namespace readly24\airdatepicker;
 
 use mrserg161\airdatepicker\DatePickerAsset;
 use yii\bootstrap\Html;
