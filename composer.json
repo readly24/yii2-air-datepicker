@@ -1,0 +1,21 @@
+{
+    "name": "readly24/yii2-air-datepicker",
+    "description": "Air datepicker",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension air-datepicker datepicker air"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "readly24",
+            "email": "readly@list.ru"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "~2.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "readly24\\airdatepicker\\": "src"
+        }
+    }
+}
