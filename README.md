@@ -28,16 +28,9 @@ Usage
 Once the extension is installed, simply use it in your code by  :
 
 ```php
-<?= $form->field($model, 'birth')->widget(
-                                    DatePicker::className(), [
-                                        'options' => [
-											                  'class' => '',
-                                        ],
+<?= $form->field($model, 'birth')->widget(DatePicker::className(), [
                                         'clientOptions' => [
                                             'autoClose' => true,
                                             'dateFormat' =>'dd/mm/yyyy'
-
                                         ],
-
-                                    ]
-                                )?>
+                                    ])?>
