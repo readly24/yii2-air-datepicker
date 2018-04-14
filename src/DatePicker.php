@@ -40,7 +40,7 @@ class DatePicker extends InputWidget
         if (isset($this->clientOptions['language'])) {
             $lang = $this->clientOptions['language'];
             $this->view->registerJsFile($asset->baseUrl . "/js/i18n/datepicker.$lang.js", [
-                'depends' => DatePickerAsset::class,
+                'depends' => DatePickerAsset::className(),
             ]);
         }
         $id = $this->options['id'];
