@@ -28,4 +28,16 @@ Usage
 Once the extension is installed, simply use it in your code by  :
 
 ```php
-<?= \readly24\airdatepicker\AutoloadExample::widget(); ?>```"# yii2-air-datepicker" 
+<?= $form->field($model, 'birth')->widget(
+                                    DatePicker::className(), [
+                                        'options' => [
+											                  'class' => '',
+                                        ],
+                                        'clientOptions' => [
+                                            'autoClose' => true,
+                                            'dateFormat' =>'dd/mm/yyyy'
+
+                                        ],
+
+                                    ]
+                                )?>
